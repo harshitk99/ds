@@ -90,4 +90,22 @@ void displayQueue(struct Queue *q)
 int main()
 {
    struct Queue q;
+   iniliatizeQueue(&q);
+
+   enqueue(&q, 10);
+   enqueue(&q, 20);
+   enqueue(&q, 30);
+
+   displayQueue(&q);
+
+   printf("Dequed Element : %d \n", deque(&q));
+   printf("Dequed Element : %d \n", deque(&q));
+
+   displayQueue(&q);
+
+   enqueue(&q, 40);
+   enqueue(&q, 50);
+
+   displayQueue(&q);
+   return 0;
 }
